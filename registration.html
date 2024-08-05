@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Library Registration</title>
+  <style>
+body{ background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6MIKFQBuKDhYZbYNE4jYIoyMwECAzeSapfg&usqp=CAU");}
+    /* CSS styles for form */
+    form {
+      width: 50%;
+      margin: 0 auto;
+    }
+    label, input {
+      display: block;
+      margin-bottom: 20px;
+    }
+    input[type="submit"] {
+      padding: 30px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Library Registration</h1>
+  <form id="registrationForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+    
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" required>
+    
+    <label for="cardNo">Card Number:</label>
+    <input type="text" id="cardNo" name="cardNo" required>
+    
+    <input type="submit" value="Register">
+  </form>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      // Perform form validation here if needed
+      
+      // Show registration success alert
+      alert("Registration Successful!");
+    });
+  </script>
+</body>
+</html>
